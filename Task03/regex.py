@@ -6,7 +6,7 @@ class Regex:
     def isNum(element):
         # Numero usa . como separador de decimal
         # Numero pode ser positivo (sem sinal) ou negativo
-        regex = compile(r'^-?\d+(?:.\d*)?$')
+        regex = compile(r'^-?\d+(?:\.\d*)?$')
         result = regex.match(element)
 
         return result is not None
